@@ -42,13 +42,13 @@ class paketController extends Controller
     }
     public function listTour()
     {
-        $dataTour=paket_tour::all();
-        // $param["dataTour"] = DB::table('paket_tour as pt')
-        // ->join('dpaket2 as dp','pt.id','=','dp.id_paket')
-        // ->select('pt.nama','pt.durasi','pt.kota','pt.gambar','dp.harga_jual')
-        // ->get();
-        return view('/paket',["dataTour"=>$dataTour]);
-        // return view('/paket')->with($param);
+        //$dataTour=paket_tour::all();
+        $param["dataTour"] = DB::table('paket_tour as pt')
+        ->join('dpaket2 as dp','pt.id','=','dp.id_paket')
+        ->select('pt.id','pt.nama','pt.durasi','pt.kota','pt.gambar','dp.hargajual')
+        ->get();
+        //return view('/paket',["dataTour"=>$dataTour]);
+        return view('/paket')->with($param);
     }
     public function editPaketView($id){
         $datapaket=paket_tour::findOrFail($id);
