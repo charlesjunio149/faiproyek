@@ -22,12 +22,12 @@
         			<form action="#">
         				<div class="fields">
 		              <div class="form-group">
-		                <input type="text" class="form-control" placeholder="Nama Paket">
+		                <input type="text" class="form-control" placeholder="Nama Paket" name="nama_paket">
 		              </div>
 		              <div class="form-group">
 		                <div class="select-wrap one-third">
 	                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                    <select name="" id="" class="form-control" placeholder="Keyword search">
+	                    <select name="" id="" class="form-control" placeholder="Keyword search" name="lokasi">
 	                      <option value="">Select Location</option>
 	                      <option value="">Lourder</option>
 	                      <option value="">Petra</option>
@@ -37,7 +37,7 @@
 	                  </div>
 		              </div>
 		              <div class="form-group">
-		                <input type="text" id="checkin_date" class="form-control" placeholder="Bulan Berangkat">
+		                <input type="text" id="checkin_date" class="form-control" placeholder="Bulan Berangkat" name="bulan">
 		              </div>
 		              <div class="form-group">
 		                <input type="submit" value="Search" class="btn btn-primary py-3 px-5">
