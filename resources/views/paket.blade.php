@@ -59,7 +59,7 @@
 				    						<h3><a href="#">{{ $tour->nama }}</a></h3>
 			    						</div>
 			    						<div class="three">
-			    							<span class="price">Rp.{{ $tour->hargajual }}</span>
+			    							<span class="price">Rp.{{ number_format($tour->hargajual) }}</span>
 		    							</div>
 		    						</div>
 		    						<p>Tanggal Keberangkatan : 10 Mei 2021 - 21 Mei 2021</p>
