@@ -58,7 +58,7 @@
 		    							<div class="one">
 				    						<h3><a href="#">{{ $tour->nama }}</a></h3>
 			    						</div>
-			    						<div class="three">
+			    						<div class="two">
 			    							<span class="price">Rp.{{ number_format($tour->hargajual) }}</span>
 		    							</div>
 		    						</div>

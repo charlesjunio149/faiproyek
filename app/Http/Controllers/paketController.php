@@ -43,11 +43,11 @@ class paketController extends Controller
     public function listTour()
     {
         //$dataTour=paket_tour::all();
+        //return view('/paket',["dataTour"=>$dataTour]);
         $param["dataTour"] = DB::table('paket_tour as pt')
         ->join('dpaket2 as dp','pt.id','=','dp.id_paket')
         ->select('pt.id','pt.nama','pt.durasi','pt.kota','pt.gambar','dp.hargajual')
         ->get();
-        //return view('/paket',["dataTour"=>$dataTour]);
         return view('/paket')->with($param);
     }
     public function editPaketView($id){
