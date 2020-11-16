@@ -69,10 +69,11 @@ Route::get('/forgotpass', function () {
 Route::get('logout','mctrl@logout');
 
 //Detail paket
+Route::get('/paket','PaketController@listTour');
 Route::get('/paket', function () {
     return view('paket');
 });
-Route::get('/paket','PaketController@listTour');
+
 Route::get('/detailpaket', function () {
     return view('detailpaket');
 });
