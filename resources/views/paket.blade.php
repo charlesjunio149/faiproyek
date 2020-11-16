@@ -48,7 +48,7 @@
           </div>
           <div class="col-lg-9">
           	<div class="row">
-				{{-- @foreach ($dataTour as $tour)
+				@foreach ($dataTour as $tour)
           		<div class="col-md-4 ftco-animate">
 		    				<div class="destination">
 		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: ={{asset('/storage/paketPicture/'.$tour->gambar)}};">
@@ -72,7 +72,7 @@
 		    					</div>
 		    				</div>
 						</div>
-						@endforeach --}}
+						@endforeach
           	</div>
           	<div class="row mt-5">
 		          <div class="col text-center">
